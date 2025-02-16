@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolodko miniszobrok térképe</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="menu">
+        <h3>Menü</h3>
+        <select onchange="navigate(this.value)">
+            <option value="">Válassz oldalt</option>
+            <option value="index.html">Kezdőlap</option>
+            <option value="kolodko_bemutatas.html">Kolodko Mihály bemutatása</option>
+        </select>
+    </div>
+    <h1>Kolodko miniszobrok térképe</h1>
+    <iframe src="https://www.google.com/maps/d/embed?mid=16SSWJ3FESyHzwZRcav4qmSJrDWjSHso&ehbc=2E312F" width="540" height="480"></iframe>
+
+    <!--Java script-->
+    <script src="script.js"></script>
+</body>
+</html>
