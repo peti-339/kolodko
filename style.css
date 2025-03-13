@@ -1,9 +1,10 @@
 body { 
-    font-family: Arial, sans-serif; display: flex; 
+    font-family: Arial, sans-serif; 
+    display: flex; 
     background-color: beige;
 }
 .menu {
-    width: 200px;
+    width: 195px;
     background: #f4f4f4;
     padding: 10px;
     position: fixed;
@@ -13,35 +14,70 @@ body {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px; 
+    transition: background-color 0.3s ease-in-out;
 }
 .container {
-    max-width: 1200px;
+    width: calc(100% - 220px);
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 220px; 
+    gap: 30px;
+    margin-left: 220px;
+    justify-content: space-evenly;
+    animation: fadeIn 1s ease-in-out;
 }
 .item { 
-    width: calc(33.333% - 20px);
+    width: calc(25% - 30px);
     text-align: center; 
+    box-sizing: border-box;
+    padding: 10px;
 }
 img {
-    max-width: 100%; 
+    max-width: 90%; 
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
-    border: 3px solid #ccc; border-radius: 10px;
+    border: 3px solid #ccc; 
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
 }
 .full-image {
     max-width: 1000px;
     max-height: 1000px; 
-    width: auto; height: auto; 
+    width: auto; 
+    height: auto; 
     display: block; 
     margin: 0 auto;
-    }
+}
 img:hover { 
     transform: scale(1.1);
     border-color: #000; 
 }
-
+h2 {
+    margin-bottom: 37px;
+}
+p {
+    margin-top: 42px;
+    margin-bottom: 10px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.item img {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.item:hover img {
+    transform: scale(1.1);
+}
+.menu select:hover {
+    background-color: #f0f0f0;
+}

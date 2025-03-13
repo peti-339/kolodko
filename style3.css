@@ -2,6 +2,7 @@
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
+    transition: background-color 0.3s ease-in-out;
 }
 body {
     font-family: Arial, sans-serif;
@@ -12,9 +13,38 @@ body {
     margin: 0;
     text-align: center;
     background-color: beige;
+    animation: fadeIn 1s ease-in-out;
 }
 iframe {
     width: 70%;
     height: 70vh;
     border: 1px solid #ccc;
+    transition: transform 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.menu {
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+.menu select:hover {
+    background-color: #e0e0e0;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
