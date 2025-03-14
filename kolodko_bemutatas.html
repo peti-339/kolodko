@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="style4.css">
 </head>
 <body onload="document.body.style.opacity='1'; animateText()">
-    <div class="menu">
+    <button class="sidebar-toggle">☰ Menü</button>
+    <div class="sidebar">
         <h3>Menü</h3>
-        <select onchange="navigate(this.value)">
-            <option value="">Válassz oldalt</option>
-            <option value="index2.html">Kezdőlap</option>
-            <option value="terkep.html">Térkép</option>
-        </select>
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="terkep.html">Térkép</a></li>
+                <li><a href="kolodko_bemutatas.html">Kolodko Mihály bemutatása</a></li>
+            </ul>
     </div>
     <h1>Kolodko Mihály</h1>
     <div class="content-container">

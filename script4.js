@@ -4,14 +4,16 @@ function navigate(value) {
     }
 }
 function navigate(url) {
-    if (url) window.location.href = url;
+    if (url) {
+        document.body.style.opacity = "0";
+        setTimeout(() => {
+            window.location.href = url;
+        }, 500);
+    }
 }
-function animateText() {
-    setTimeout(() => {
-        document.querySelector('.text-content').style.opacity = '1';
-        document.querySelector('.text-content').style.transform = 'translateX(0)';
-    }, 500);
-}
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.style.opacity = "1";
+});
 document.addEventListener("DOMContentLoaded", function () {
     const sidebar = document.querySelector(".sidebar");
     const toggleBtn = document.createElement("button");

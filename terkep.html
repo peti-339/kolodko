@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="style3.css">
 </head>
 <body>
-    <div class="menu">
+    <button class="sidebar-toggle">☰ Menü</button>
+    <div class="sidebar">
         <h3>Menü</h3>
-        <select onchange="navigate(this.value)">
-            <option value="">Válassz oldalt</option>
-            <option value="index2.html">Kezdőlap</option>
-            <option value="kolodko_bemutatas.html">Kolodko Mihály bemutatása</option>
-        </select>
-    </div>
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="terkep.html">Térkép</a></li>
+                <li><a href="kolodko_bemutatas.html">Kolodko Mihály bemutatása</a></li>
+            </ul>
+        </div>
     <h1>Kolodko miniszobrok térképe</h1>
     <iframe src="https://www.google.com/maps/d/embed?mid=16SSWJ3FESyHzwZRcav4qmSJrDWjSHso&ehbc=2E312F" width="540" height="480"></iframe>
 
     <!--Java script-->
-    <script src="script1.js"></script>
+    <script src="script4.js"></script>
 </body>
 </html>

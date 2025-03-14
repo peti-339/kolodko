@@ -3,18 +3,37 @@ body {
     display: flex; 
     background-color: beige;
 }
-.menu {
+.sidebar {
     width: 195px;
     background: #f4f4f4;
-    padding: 10px;
+    color: white;
     position: fixed;
     height: 100vh;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
 }
-.menu select {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px; 
-    transition: background-color 0.3s ease-in-out;
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 15px 0;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: #34495e;
+    border-radius: 5px;
+}
+.sidebar ul li a:hover {
+    background: #1abc9c;
 }
 .container {
     width: calc(100% - 220px);
@@ -78,6 +97,14 @@ p {
 .item:hover img {
     transform: scale(1.1);
 }
-.menu select:hover {
-    background-color: #f0f0f0;
+.sidebar {
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.sidebar select:hover {
+    background-color: #e0e0e0;
 }
