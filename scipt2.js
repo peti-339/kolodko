@@ -20,6 +20,18 @@ document.addEventListener("DOMContentLoaded", function() {
         heroSection.style.transform = "translateY(0)";
     }, 200);
 });
-window.addEventListener("load", function() {
-    document.getElementById("content").classList.add("visible");
+document.addEventListener("DOMContentLoaded", function () {
+    const gallerySection = document.getElementById("galeria");
+
+    function handleScroll() {
+        const sectionPosition = gallerySection.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3;
+
+        if (sectionPosition < screenPosition) {
+            gallerySection.classList.add("visible");
+        }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
 });

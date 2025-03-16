@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.credits {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.credit {
+    text-align: center;
+}
+img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+.sidebar {
+    width: 195px;
+    background: #f4f4f4;
+    color: white;
+    position: fixed;
+    height: 100vh;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    left: -250px;
+    transition: left 0.3s ease-in-out;
+}
+.sidebar.active {
+    left: 0;
+}
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 15px 0;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: #34495e;
+    border-radius: 5px;
+}
+.sidebar ul li a:hover {
+    background: #1abc9c;
+}
+.sidebar-toggle {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    background: #34495e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.sidebar-toggle:hover {
+    background: #1abc9c;
+}
